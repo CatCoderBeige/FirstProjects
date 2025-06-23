@@ -1,8 +1,4 @@
-function Tag1() {
-    const String;
-    const Number;
-    const Boolean;
-    const Undefined;
-    const Null;
-    console.log(typeof String);
+function uncensor() {
+    let el = document.querySelector.innerHTML(p);
+    el = "Suck my balls";
 }
