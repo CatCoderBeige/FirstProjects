@@ -5,4 +5,10 @@ body {
 .Bilderraster {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-width: fit-content;
+}
+
+.Collage {
+  max-width: 100%;
+  max-height: 100%;
 }
