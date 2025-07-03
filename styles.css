@@ -7,7 +7,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 75%;
-  gap: 16px;
+  gap: 5%;
 }
 
 .Collage {
