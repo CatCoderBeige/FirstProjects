@@ -3,9 +3,9 @@ function uncensor() {
 
   if (el) { // Überprüfe, ob das Element existiert
     el.innerHTML = `
-      <img class="Collage" src="1.png">
-      <img class="Collage" src="2.png">
-      <img class="Collage" src="3.png">
+      <img class="Collage" src="1.jpeg">
+      <img class="Collage" src="2.jpeg">
+      <img class="Collage" src="3.jpeg">
       <img class="Collage" src="4.jpeg">
       <img class="Collage" src="5.jpeg">
       <img class="Collage" src="6.jpeg">
