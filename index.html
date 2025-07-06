@@ -8,9 +8,11 @@
     <div class="Header">
         <h1>Drück mal auf den Knopf</h1>
         <p>hey</p>
-        <button onclick="uncensor()" class="druck">DRÜCK MICH</button>
+        <button onclick="alleBilder()" class="druck">DRÜCK MICH</button>
     </div>
      <div class="Bilderraster"></div>
+     <input type="range" min="1" max="6" value="1" class="slider" id="myRange" oninput="alleBilder()">
+
     <script src="script.js"></script>
    </body>
   </html>

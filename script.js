@@ -1,3 +1,4 @@
+/*
 function uncensor() {
   const el = document.querySelector("div.Bilderraster");
 
@@ -14,5 +15,25 @@ function uncensor() {
   } else {
     console.log("Element mit der Klasse 'Bilderraster' nicht gefunden."); // Füge eine Fehlermeldung hinzu, um zu debuggen
   }
+} */
+
+let Zähler = document.querySelector("input[type='range']").value;
+
+
+function alleBilder() {
+  const anzahl = parseInt(document.querySelector("#myRange").value);
+  const el = document.querySelector("div.Bilderraster");
+
+  if (!el) {
+    console.log("Element mit der Klasse 'Bilderraster' nicht gefunden.");
+    return;
+  }
+
+  el.innerHTML = ""; // Vorherige Bilder entfernen
+
+  for (let i = 1; i <= anzahl; i++) {
+    el.innerHTML += `<img class="Collage" src="${i}.jpeg">`;
+  }
 }
+
 
