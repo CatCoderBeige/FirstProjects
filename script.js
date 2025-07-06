@@ -17,8 +17,7 @@ function uncensor() {
   }
 } */
 
-let Zähler = document.querySelector("input[type='range']").value;
-
+// let Zähler = document.querySelector("input[type='range']").value;
 
 function alleBilder() {
   const anzahl = parseInt(document.querySelector("#myRange").value);
