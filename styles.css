@@ -23,7 +23,8 @@ html, body {
   border-radius: 10%;
 }
 
-.druck {
+.anker, .druck {
+  text-decoration: none;
   color: black;
   border: solid 2px white;
   border-radius: 7px;
