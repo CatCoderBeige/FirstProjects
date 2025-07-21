@@ -9,7 +9,7 @@ html, body {
 }
 
 .Bilderraster {
-  margin: 5% 0 5% 0;
+  margin: 2.5% 0 5% 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 75%;
@@ -19,54 +19,90 @@ html, body {
 .Collage {
   max-width: 100%;
   max-height: 100%;
-  border: 2px solid pink;
+  border: 2px solid #009ca6;
   border-radius: 10%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Collage:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .anker, .druck {
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
   color: black;
   border: solid 2px white;
   border-radius: 7px;
-  height: 26px;
+  min-height: 26px; /* Minimum height, but can grow with content */
+  height: auto;     /* Height adjusts to content */
   background-color: azure;
+  padding: 0 16px; /* Horizontal padding for better button appearance */
+  margin: 0 auto;  /* Center the button horizontally */
 }
+
 
 .love-letter {
   max-width: 700px;
+  max-height: 600px;
+  overflow-y: auto;
   margin: 6% auto 6% auto; /* Add bottom margin for space below the box */
   background: rgba(255,255,255,0.85);
   border-radius: 24px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-  padding: 2.5rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 1rem;
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.18rem;
   line-height: 1.7;
-  color: #b8005c;
+  color: #004247;
   letter-spacing: 0.01em;
   word-break: break-word;
   text-align: left;
 }
 
 .love-letter p {
-  margin: 0;
+  margin: 6%;
   white-space: pre-line;
 }
 
 .verpacktesGeschenk {
   max-width: 700px;
-  margin: 6% auto 6% auto; /* Add bottom margin for space below the box */
-  background: rgba(255,255,255,0.85);
+  margin: 6% auto 6% auto;
+background: #009ca6;
   border-radius: 24px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   padding: 2.5rem 2rem 2rem 2rem;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 1.18rem;
-  line-height: 1.7;
-  color: #b8005c;
-  letter-spacing: 0.01em;
-  word-break: break-word;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* mach das Geschenkpapier weiter
+.slider {
+height: 8px;
+background: #009ca6;
+border-radius: 4px;
+outline: none;
+-webkit-appearance: none;
+appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #009ca6;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #004247;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 16px;
+  border-radius: 2px;
+}
+
+/* button,slider,background,container(basic)

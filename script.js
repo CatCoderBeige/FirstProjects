@@ -39,6 +39,8 @@ function geschenkPapier() {
   const papier = document.querySelector("div.verpacktesGeschenk");
   if (papier) {
     papier.innerHTML = `
+  <div class="letter-wrapper">
+    <h1>Für Charlotte 💖</h1>
     <div class="love-letter">
         <p>Hi Baby, ich habe dir diesen Liebesbrief geschrieben, aber die Idee kam nicht von dir, falls du dich noch daran erinnerst. Ich hatte die Idee schon vorher und bin darauf gekommen, weil ich dir zeigen will, wie sehr ich dich liebe und wie viel du mir bedeutest.
 Ich liebe dich von ganzem Herzen, weil ich dir von Anfang an Seiten zeigen konnte, die ich sonst selten und nur bei ein paar Menschen zeige, die ich schon lange kenne. Ich habe mich sofort warm bei dir gefühlt und wollte dich direkt beeindrucken. Ich wollte lustig sein, damit du auch auf mich stehst. Ich habe so gehofft, als ich dich eine alte Katzenomi genannt habe, dass du lachst und mich besonders findest. Ich wollte dich die ganze Zeit mit allen komischen und verwirrenden Sachen dazu bringen, dass du dich verliebst. In mich!
@@ -50,8 +52,17 @@ Ich könnte noch mindestens das Doppelte an Text schreiben und mir würden nicht
 Mit ganz, ganz, ganz viel umgekippter 8-Liebe, dein Baby Po~
 (Vergiss nicht, ich liebe dich immer einmal mehr mwaaah)</p>
     </div>
+  </div>
     `;
   } else {
     console.log("Element mit der Klasse 'love-letter' nicht gefunden.");
   }
 }
+
+const slider = document.querySelector('.slider');
+function updateSliderBackground() {
+  const percent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+  slider.style.background = `linear-gradient(to right, #009ca6 ${percent}%, #fff ${percent}%)`;
+}
+slider.addEventListener('input', updateSliderBackground);
+updateSliderBackground(); // Initialer Zustand
