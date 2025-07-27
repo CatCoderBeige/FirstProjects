@@ -101,4 +101,11 @@ html, body {
   border-radius: 2px;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* button,slider,background,container(basic)
